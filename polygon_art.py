@@ -39,19 +39,19 @@ class Artwork:
 
     def draw_artwork(self):
         if self.__choice == 1:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 Artwork(1).draw_polygon(3)
         elif self.__choice == 2:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 Artwork(2).draw_polygon(4)
         elif self.__choice == 3:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 Artwork(3).draw_polygon(5)
         elif self.__choice == 4:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 Artwork(4).draw_polygon(random.randint(3, 5))
         elif self.__choice == 5:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 n = Artwork(5)
                 for j in range(2):
                     n.draw_polygon(3)
@@ -59,7 +59,7 @@ class Artwork:
                     n.adjust_size()
                     n.draw_polygon(3)
         elif self.__choice == 6:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 n = Artwork(6)
                 for j in range(2):
                     n.draw_polygon(4)
@@ -67,7 +67,7 @@ class Artwork:
                     n.adjust_size()
                     n.draw_polygon(4)
         elif self.__choice == 7:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 n = Artwork(7)
                 for j in range(2):
                     n.draw_polygon(5)
@@ -75,7 +75,7 @@ class Artwork:
                     n.adjust_size()
                     n.draw_polygon(5)
         elif self.__choice == 8:
-            for i in range(random.randint(25, 50)):
+            for i in range(random.randint(25, 30)):
                 n = Artwork(8)
                 side = random.randint(3, 5)
                 for j in range(2):
