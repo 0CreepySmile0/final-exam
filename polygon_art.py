@@ -85,7 +85,11 @@ class Artwork:
                     n.draw_polygon(side)
 
 
-choice = int(input("Which art do you want to generate? Enter a number between 1 to 8, inclusive: "))
+choice = input("Which art do you want to generate? Enter a number between 1 to 8, inclusive: ")
+while choice not in [str(i) for i in range(1, 9)]:
+    choice = input("Input again (only number 1 to 8): ")
+else:
+    choice = int(choice)
 turtle.speed(0)
 turtle.bgcolor('black')
 turtle.tracer(0)
